@@ -13,7 +13,7 @@
         <h1>Lógica de programação com Jefferson</h1>
         
         <button onclick="somar()">+</button>
-        <button onclick="Subtrair()">-</button>
+        <button onclick="subtrair()">-</button>
         <button onclick="Dividir()">/</button>
         <button onclick="Multiplicar()">*</button>
         
@@ -35,6 +35,15 @@
                 n2 = parseFloat(n2);
                 
                 output.innerHTML = 'Soma de ' + n1 + ' + ' + n2 + ' = ' + (n1+n2);
+                
+            }
+
+            function subtrair(){
+                
+                var n2 = prompt('Informe outro número: ');
+                n2 = parseFloat(n2);
+                
+                output.innerHTML = 'Subtracao de ' + n1 + ' - ' + n2 + ' = ' + (n1-n2);
                 
             }
         

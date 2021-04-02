@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+    
+    <head>
+        
+        <title>Lógica de programação com JavaScript</title>
+        <meta charset="utf-8">
+        
+    </head>
+    
+    <body>
+        
+        <h1>Lógica de programação com JavaScript</h1>
+        
+    </body>
+
+    <script>
+    
+                var n1 = prompt("Jogador 1: Digite um número!");
+                n1 = parseInt(n1);
+        
+                var n2 = prompt("Jogador 1: Digite um número!");
+                n2 = parseInt(n2);
+        
+        if(n1 === n2){
+            
+            alert("Empate!");
+            
+        } else {
+                
+                var resultado = parseInt(Math.random() * 2);
+                alert(resultado);
+            
+                if(resultado === 0){
+                    
+                    if(n1 < n2){
+                        
+                        alert("Jogador 1 ganhou!");
+                        
+                    } else {
+                        
+                        alert("Jogador 2 ganhou!");
+                    }
+                    
+                } else {
+                    
+                    if(n1 > n2){
+                         
+                        alert("Jogador 1 ganhou!");
+                        
+                    } else {
+                        
+                        alert("Jogador 2 ganhou!");
+                    }
+                }
+            
+        }
+        
+        
+
+        
+        
+        
+        
+    </script>
+
+
+
+</html>

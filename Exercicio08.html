@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+    
+    <head>
+        
+        <title>Lógica de programação com JavaScript</title>
+        <meta charset="utf-8">
+        
+    </head>
+    
+    <body>
+        
+        <h1>Anos Bissextos e Não Bissextos</h1>
+        
+    </body>
+
+    <script>
+            
+        
+        var ano = 1004;
+        
+        while(ano <= 2017){
+            
+            //1004 é multiplo de 100? Não, então é bissexo...
+            
+            if( !(ano % 100 === 0) || (ano % 400 === 0)){
+                
+                document.write('Ano: ' + ano + '<hr>');
+                
+            }else{
+                
+                document.write('Ano: ' + ano + ' Não é bissexto <hr>');
+            }
+            
+            ano += 4;
+        }
+        
+       /* var anoinical = prompt('Informe o ano inicial: ');
+        var anofinal = prompt('Informe o ano final: ');
+        
+        
+        for(var i = anoinical ; i <= anofinal; i++){
+            
+            if(i % 4 === 0 & i % 100 !== 0 || i % 400 === 0){
+                
+                document.write('Ano: ' + i + ' Eh bissexto <hr>');
+                
+            }else{
+                
+                document.write('Ano ' + i +}
+                
+        } */
+        
+      
+    
+    </script>
+
+</html>

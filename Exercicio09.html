@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+    
+    <head>
+        
+        <title>Lógica de programação com JavaScript</title>
+        <meta charset="utf-8">
+        
+    </head>
+    
+    <body>
+        
+        <h1>Lógica de programação com Jefferson</h1>
+        
+        <button onclick="somar()">+</button>
+        <button onclick="Subtrair()">-</button>
+        <button onclick="Dividir()">/</button>
+        <button onclick="Multiplicar()">*</button>
+        
+        <hr>
+        <div id="output"></div>
+        
+        <script>
+            
+            var output = document.querySelector('#output');
+        
+            var n1 = prompt('Informe um número: ');
+            n1 = parseFloat(n1);
+            
+            output.innerHTML = n1;
+            
+            function somar(){
+                
+                var n2 = prompt('Informe outro número: ');
+                n2 = parseFloat(n2);
+                
+                output.innerHTML = 'Soma de ' + n1 + ' + ' + n2 + ' = ' + (n1+n2);
+                
+            }
+        
+        </script>
+        
+    </body>
+
+   
+
+
+
+</html>

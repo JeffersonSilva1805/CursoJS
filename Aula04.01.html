@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+    
+    <head>
+        
+        <title>Lógica de programação com JavaScript</title>
+        <meta charset="utf-8">
+        
+    </head>
+    
+    <body>
+        
+        <h1>Lógica de programação com JavaScript</h1>
+        
+        <button onclick="mostrarTabuada()">Criar tabuada</button>
+        <button onclick="limparTabuada()">Limpar tabuada</button>
+        
+        <div id="output"></div>
+        
+        <script>
+            
+            function mostrarTabuada(){
+                
+              var n = prompt('Informe um número: ');
+                        
+               limparTabuada();
+                
+                n = parseFloat(n);
+                
+                var i = 0;
+                
+                    while(i <= 1000){
+                        
+                       mensagem += (n + ' x ' + i + ' = ' +(n * i) + '</br>');
+                                    
+                       i++;
+                                    
+                    }
+                                    
+                output.innerHTML = mensagem;
+            }
+            
+            
+            /*const limparTabuada =  () =>  {
+                
+                    output.innetHTML = '';
+                
+                }*/
+            
+            function limparTabuada(){
+                
+            mensagem = '';
+            output.innerHTML = mensagem;
+                
+            }
+            
+                 var output = document.querySelector('#output');         
+                 //Cria uma variavel para armazenar, armazena uma referencia do Html.
+            
+                 var mensagem = '';
+                
+                   
+        </script>
+
+    </body>
+
+</html>
